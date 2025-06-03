@@ -16,8 +16,7 @@ steps:
     versionSpec: '18'
 - script: |
     npm install
-    yarn build
-    npx keycloakify
+    npm run build-keycloak-theme
     cp build_keycloak/target/keycloak-theme-for-kc-all-other-versions.jar build_keycloak/target/cv-manager-keycloak-theme-4.8.2.jar
 - task: CopyFiles@2
   inputs:
