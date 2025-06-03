@@ -17,10 +17,9 @@ steps:
 - script: |
     npm install
     npm run build-keycloak-theme
-    cp build_keycloak/target/keycloak-theme-for-kc-all-other-versions.jar build_keycloak/target/cv-manager-keycloak-theme-4.8.2.jar
 - task: CopyFiles@2
   inputs:
-    Contents: 'build_keycloak/target/cv-manager-keycloak-theme-4.8.2.jar'
+    Contents: 'build_keycloak/keycloak-theme-for-kc-all-other-versions.jar'
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 # Publish the artifacts directory for consumption in publish pipeline
 - task: PublishBuildArtifacts@1
