@@ -7,11 +7,7 @@
 	font-family: 'Work Sans';
 }
 
-/* .my-root-class {
-	background: #333;
-} */
-
-.my-root-class body {
+body.kcBodyClass {
 	background: #333;
 }
 
@@ -24,20 +20,24 @@
 	padding-left: 30px;;
 }
 
-.btn-primary{
-	/*background-color: aquamarine;*/
+div.kcFormCardClass{
+    border-color: #fff;
+}
+
+input.kcButtonClass{
 	background-image: linear-gradient(to bottom,#d16d15 0,#f18632 100%);
-	border-color:"d16d15" ;
+	border-color: #d16d15;
 }
-.btn-primary:hover{
-	/*background-color: aquamarine;*/
+input.kcButtonClass:hover{
 	background-image: linear-gradient(to bottom,#d16d15 0,#fdccb0 100%);
-	border-color:"fdccb0" ;
+	border-color: #fdccb0;
 }
-.alert{
+/* Confirm if this does anything */
+.kcAlertClass{
 	background-color: "#0e2052" !important;
 }
-.alert-success{
+/* This doesn't do anything - */
+.alert-success{ 
 	background-color: "#0e2052" !important;
 	border-color:"0e2052" ;
 }
