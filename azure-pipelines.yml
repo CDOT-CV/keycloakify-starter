@@ -13,14 +13,13 @@ steps:
 - checkout: self
 - task: NodeTool@0
   inputs:
-    versionSpec: '16'
+    versionSpec: '18'
 - script: |
     npm install
-    yarn build
-    npx keycloakify
+    npm run build-keycloak-theme
 - task: CopyFiles@2
   inputs:
-    Contents: 'build_keycloak/target/cv-manager-keycloak-theme-4.8.2.jar'
+    Contents: 'dist_keycloak/keycloak-theme-for-kc-all-other-versions.jar'
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 # Publish the artifacts directory for consumption in publish pipeline
 - task: PublishBuildArtifacts@1
