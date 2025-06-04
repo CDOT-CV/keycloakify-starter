@@ -1,12 +1,4 @@
 
-.my-color {
-	color: rgb(255, 255, 255);
-}
-
-.my-font {
-	font-family: 'Work Sans';
-}
-
 body.kcBodyClass {
 	background: #333;
 }
@@ -16,28 +8,15 @@ body.kcBodyClass {
     padding-right: 30px;
 }
 
-.img.kc-header-wrapper-realmtitle{
-	padding-left: 30px;;
-}
-
-div.kcFormCardClass{
+div.kcFormCardClass {
     border-color: #fff;
 }
 
-input.kcButtonClass{
+input.kcButtonClass {
 	background-image: linear-gradient(to bottom,#d16d15 0,#f18632 100%);
 	border-color: #d16d15;
 }
-input.kcButtonClass:hover{
+input.kcButtonClass:hover {
 	background-image: linear-gradient(to bottom,#d16d15 0,#fdccb0 100%);
 	border-color: #fdccb0;
-}
-/* Confirm if this does anything */
-.kcAlertClass{
-	background-color: "#0e2052" !important;
-}
-/* This doesn't do anything - */
-.alert-success{ 
-	background-color: "#0e2052" !important;
-	border-color:"0e2052" ;
 }
