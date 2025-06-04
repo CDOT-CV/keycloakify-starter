@@ -1,0 +1,22 @@
+
+body.kcBodyClass {
+	background: #333;
+}
+
+#kc-logo {
+    width: 10%;
+    padding-right: 30px;
+}
+
+div.kcFormCardClass {
+    border-color: #fff;
+}
+
+input.kcButtonClass {
+	background-image: linear-gradient(to bottom,#d16d15 0,#f18632 100%);
+	border-color: #d16d15;
+}
+input.kcButtonClass:hover {
+	background-image: linear-gradient(to bottom,#d16d15 0,#fdccb0 100%);
+	border-color: #fdccb0;
+}

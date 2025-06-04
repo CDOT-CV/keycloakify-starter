@@ -15,7 +15,7 @@ steps:
   inputs:
     versionSpec: '18'
 - script: |
-    npm install
+    yarn install
     npm run build-keycloak-theme
 - task: CopyFiles@2
   inputs:
