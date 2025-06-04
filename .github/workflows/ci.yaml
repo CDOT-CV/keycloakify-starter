@@ -17,9 +17,7 @@ jobs:
     - uses: actions/setup-node@v4
       with:
         node-version: '18'
-    - run: npm cache clean --force
-    - run: npm ci
-    - run: npm rebuild
+    - uses: bahmutov/npm-install@v1
     - run: npm run build-keycloak-theme
     - uses: actions/upload-artifact@v4
       with:
